@@ -6,10 +6,18 @@
 </div>
 
 <div class="text-container">
-<h1>Hello World</h1>
+<h1>Retro: User's digest</h1>
+<h2>Q1 2025 Key Insights</h2>
+  <ul>
+    <li>Agentification</li>
+    <li>Vibe Coding</li>
+    <li>The Future is AI</li>
+  </ul>
 <p>bla bla bla</p>
-    <a href="/about" class="btn-outline">ebook</a>
-    <a href="/about" class="btn-outline">audiobook</a>
+<div class="button-container">
+  <%= link_to "ebook", asset_path("epub-test-01.epub"), class: "btn-outline-coral", download: "epub-test-01.epub" %>
+  <%= link_to "audiobook", asset_path("epub-test-01.epub"), class: "btn-outline-coral", download: "test-01.m4b" %>
+</div>
 </div>
 
 </div>

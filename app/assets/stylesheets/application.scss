@@ -30,7 +30,7 @@ body {
 
 .rounded-container {
   display: flex;
-  width: 60%; /* 6/12 = 50% for a 6-column width */
+  width: 50%; /* 6/12 = 50% for a 6-column width */
   aspect-ratio: 1/1; /* This makes it square */
   align-items: center;
   justify-content: center;
@@ -39,30 +39,54 @@ body {
 }
 
 .fit-image {
-  width: 110%;
-  height: 110%;
+  width: 150%;
+  height: 150%;
   object-fit: cover; /* This fills the container, may crop the image */
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 50%;
   aspect-ratio: 1/1; /* This makes it square */
   justify-content: center; /* Vertical centering */
   align-items: flex-start; /* Left alignment - this was conflicting before */
   overflow: hidden;
 }
 
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
 h1 {
   font-family: "Literata", serif;
   font-optical-sizing: auto;
-  font-size:3rem;
+  font-size:1.5rem;
   font-weight: 800;
   font-style: normal;
 }
 
+h2 {
+  font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-size:1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
 p {
+  font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-size:1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul li {
   font-family: "Literata", serif;
   font-optical-sizing: auto;
   font-size:1rem;
