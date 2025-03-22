@@ -9,4 +9,13 @@
 
 // Your CSS partials
 @import "components/index";
+@import "components/navbar";
 @import "pages/index";
+
+
+body {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
