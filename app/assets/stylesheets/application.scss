@@ -17,5 +17,25 @@ body {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: #f7f3f0;
+}
+
+.main-container {
+  margin-top: 4%;
+}
+
+.rounded-container {
+  display: flex;
+  width: 60%; /* 6/12 = 50% for a 6-column width */
+  aspect-ratio: 1/1; /* This makes it square */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.fit-image {
+  width: 110%;
+  height: 110%;
+  object-fit: cover; /* This fills the container, may crop the image */
 }
