@@ -30,5 +30,12 @@ module RetroProductDesign
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Configure asset pipeline to handle M4B files properly
+    config.assets.paths << Rails.root.join("app", "assets", "audiobooks")
+    config.assets.precompile += %w( *.m4b )
+
+    # Set proper MIME type for M4B audiobook files
+    config.mime_types = { m4b: "audio/mp4" }
   end
 end
