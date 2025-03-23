@@ -51,7 +51,6 @@ body {
   aspect-ratio: 1/1; /* This makes it square */
   justify-content: center; /* Vertical centering */
   align-items: flex-start; /* Left alignment - this was conflicting before */
-  overflow: hidden;
 }
 
 .button-container {
