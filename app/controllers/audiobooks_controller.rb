@@ -1,14 +1,9 @@
 class AudiobooksController < ApplicationController
   def download
-    file_path = Rails.root.join("public", "audiobooks", "my_audiobook.m4b")
+    # Dropbox MP3 URL
+    dropbox_url = "https://www.dropbox.com/scl/fi/tq4tl5a9odb1w0ewlgx1d/Conversational-AI-9.18.32-AM.mp3?rlkey=l0g4p835tbq3po1tunfp6t1xd&st=zm1o97yv&dl=1"
 
-    if File.exist?(file_path)
-      send_file file_path,
-                type: "audio/x-m4b", # Alternative MIME type for M4B
-                disposition: "attachment",
-                filename: "my_audiobook.m4b"
-    else
-      render plain: "File not found", status: :not_found
-    end
+    # Redirecting the user to the Dropbox MP3 file
+    redirect_to dropbox_url
   end
 end
