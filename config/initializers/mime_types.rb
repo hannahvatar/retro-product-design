@@ -1,1 +1,2 @@
-Mime::Type.register "audio/mp4", :m4b
+# config/initializers/mime_types.rb
+Mime::Type.register "audio/x-m4b", :m4b
