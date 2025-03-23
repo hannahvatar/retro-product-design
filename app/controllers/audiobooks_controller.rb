@@ -1,18 +1,14 @@
-# app/controllers/audiobooks_controller.rb
 class AudiobooksController < ApplicationController
-  require 'open-uri'
-
   def download
-    # The Dropbox direct download URL
-    dropbox_url = "https://dl.dropboxusercontent.com/scl/fi/vkdg3u7rku5kfngzfz3lp/test-02.m4b?rlkey=ejazrw5t9dbdblj8juawnkhhk&dl=1"
+    file_path = Rails.root.join("public", "audiobooks", "my_audiobook.m4b")
 
-    # Download the file from Dropbox
-    audiobook_data = URI.open(dropbox_url).read
-
-    # Send the file with explicit headers
-    send_data audiobook_data,
-              type: "audio/x-m4b",
-              disposition: "attachment",
-              filename: "test-02.m4b"
+    if File.exist?(file_path)
+      send_file file_path,
+                type: "audio/x-m4b", # Alternative MIME type for M4B
+                disposition: "attachment",
+                filename: "my_audiobook.m4b"
+    else
+      render plain: "File not found", status: :not_found
+    end
   end
 end
