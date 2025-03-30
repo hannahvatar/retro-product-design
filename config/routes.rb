@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   get "about", to: "pages#about"
+  get "about-project", to: "pages#about-project"
   get "contact", to: "pages#contact"
   get "podcast", to: "pages#podcast"
   get 'download/audiobook', to: 'audiobooks#download', as: 'download_audiobook'

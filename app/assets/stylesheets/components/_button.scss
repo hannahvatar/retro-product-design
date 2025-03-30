@@ -1,19 +1,28 @@
-.btn-outline {
+.btn-menu {
+  font-family: "Literata", serif;
+  text-align: center;
   display: inline-block;
-  padding: 0.5rem 1rem;
-  gap: 0.5rem;
-  border: 2px solid #3CB043;
-  border-radius: 2rem; // Adjust for more or less rounding
-  color: #3CB043;
-  font-weight: 500;
+  gap: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: none; /* Removed border */
+  color: black; /* Changed to black */
+  font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.3s ease;
   background-color: transparent;
 
   &:hover {
-    background-color: #3CB043;
-    color: white;
+    background-color: transparent; /* Removed background color on hover */
+    color: black; /* Kept black on hover */
+    text-decoration: underline; /* Underline when selected/active */
+  }
+
+  &.selected, &:active {
+    text-decoration: underline; /* Underline when selected/active */
+    color: black;
+    font-weight: 500;
   }
 }
 

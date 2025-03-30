@@ -4,8 +4,9 @@
   </div>
 
   <div class="navbar-menu">
-    <a href="/about" class="btn-outline">About</a>
-    <a href="/contact" class="btn-outline">Contact</a>
-    <a href="/podcast" class="btn-outline">🎙️ Podcast Collab</a>
+    <a href="/about-project" class="btn-menu <%= request.path == '/about-project' ? 'selected' : '' %>">About this project</a>
+     <a href="/about" class="btn-menu <%= request.path == '/about' ? 'selected' : '' %>">About me</a>
+    <a href="/contact" class="btn-menu <%= request.path == '/contact' ? 'selected' : '' %>">Contact</a>
+    <a href="/podcast" class="btn-menu <%= request.path == '/podcast' ? 'selected' : '' %>">Podcast Collab</a>
   </div>
 </nav>
