@@ -30,9 +30,9 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   gap: 0.5rem;
-  border: 2px solid #ff1818;
+  border: 2px solid #000000;
   border-radius: 2rem; // Adjust for more or less rounding
-  color: #ff1818;
+  color: #000000;
   font-weight: 500;
   font-size: 1rem;
   text-decoration: none;
@@ -40,7 +40,7 @@
   background-color: transparent;
 
   &:hover {
-    background-color: #ff1818;
+    background-color: #000000;
     color: white;
   }
 }

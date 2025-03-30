@@ -1,12 +1,12 @@
 <nav class="navbar">
   <div class="navbar-brand">
-    <a href="/" class="navbar-logo">Logo</a>
+    <a href="/" class="btn-menu <%= request.path == '/' ? 'selected' : '' %>">Home</a>
   </div>
 
   <div class="navbar-menu">
     <a href="/about-project" class="btn-menu <%= request.path == '/about-project' ? 'selected' : '' %>">About this project</a>
      <a href="/about" class="btn-menu <%= request.path == '/about' ? 'selected' : '' %>">About me</a>
     <a href="/contact" class="btn-menu <%= request.path == '/contact' ? 'selected' : '' %>">Contact</a>
-    <a href="/podcast" class="btn-menu <%= request.path == '/podcast' ? 'selected' : '' %>">Podcast Collab</a>
+    <a href="/podcast" class="btn-menu <%= request.path == '/podcast' ? 'selected' : '' %>">🎙️Podcast Collab</a>
   </div>
 </nav>
