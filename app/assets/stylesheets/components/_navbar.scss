@@ -12,7 +12,7 @@
   width: 40px;
 }
 
-/* Burger menu styles */
+/* Burger menu styles - thinner lines */
 .burger-menu {
   display: none;
   cursor: pointer;
@@ -21,7 +21,7 @@
 .burger-menu span {
   display: block;
   width: 25px;
-  height: 3px;
+  height: 2px; /* Changed from 3px to 2px */
   margin: 5px 0;
   background-color: #000;
   transition: 0.4s;
@@ -50,6 +50,7 @@
     width: 100%;
     flex-direction: column;
     padding-top: 10px;
+    align-items: flex-start; /* Align items to the left */
   }
 
   .navbar-menu.active {
@@ -58,5 +59,7 @@
 
   .navbar-menu a {
     margin: 5px 0;
+    text-align: left; /* Ensure text is left-aligned */
+    justify-content: flex-start; /* For flex items */
   }
 }
