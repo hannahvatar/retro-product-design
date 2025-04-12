@@ -1,1 +1,1 @@
-Mime::Type.register "audio/mpeg", :mp3
+Mime::Type.register "application/x-mobipocket-ebook", :mb4
